@@ -9,12 +9,11 @@ if(isset($_POST['signIn'])){
         session_start();
    qq     $row=$result->fetch_assoc();
         $_SESSION['email']=$row['email'];
-        header("Location : C:\Users\MSI\Desktop\mon travail web\Web-Project-2\index.html");
+        header("Location : C:\Users\MSI\Desktop\Web-Project-2\index.html");
         exit();
     }
     else{
         echo"Not Found , Incorrect Email or Password";
     }
 }
-
 ?>
